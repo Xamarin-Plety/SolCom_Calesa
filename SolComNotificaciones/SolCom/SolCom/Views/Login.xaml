@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.Login">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <Label Grid.Row="0" Grid.Column="0" Text="Solicitudes de Compra"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <ContentView Grid.Row="1" Grid.Column="0" Padding="0,20,0,20" VerticalOptions="FillAndExpand">
+                    <Image Source="logoSF.png" VerticalOptions="Center" HeightRequest="150" />
+                </ContentView>
+                <Label Grid.Row="2" Grid.Column="0" Text="Login" HorizontalOptions="CenterAndExpand" />
+                <Entry Grid.Row="3" Grid.Column="0" x:Name="Username" Placeholder="Usuario" Margin="10,0,10,0" />
+                <Entry Grid.Row="4" Grid.Column="0" x:Name="Password" Placeholder="Password" IsPassword="True" Margin="10,0,10,0"  />
+                <Button Grid.Row="5" Grid.Column="0" Text="Iniciar Sesión" Clicked="btnLoginClick" BackgroundColor="LightGray" Margin="10,0,10,0"  CornerRadius="20"/>
+            </Grid>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

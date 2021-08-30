@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ConsultaSolicitudes"
+             Title="Consulta Solicitudes"
+             BackgroundColor="#d0e7f5" >
+    <ContentPage.Content >
+        <ScrollView x:Name="scrollV" >
+            <StackLayout BackgroundColor="#d0e7f5" HorizontalOptions="FillAndExpand">
+                <DatePicker x:Name="dtFechaInicial" FontSize="13" Format="dd/MM/yy" />
+                <DatePicker x:Name="dtFechaFinal" FontSize="13" Format="dd/MM/yy"/>
+                <Entry x:Name="iIdSolicitud" FontSize="13" Placeholder="Id Solicitud" Keyboard="Numeric" />
+                <Picker x:Name="pIdCentro" FontSize="13" Title="Centro" />
+                <Picker x:Name="pIdComprador" FontSize="13" Title="Comprador"/>
+                <Picker x:Name="pIdSolicitante" FontSize="13" Title="Solicitante" />
+                <!--<Picker x:Name="pIdProveedor" Title="Proveedor" />-->
+                <AbsoluteLayout  HorizontalOptions="FillAndExpand">
+                    <Entry TextChanged="SearchBar_OnTextChanged" Focused="searchBar_Focused"  BackgroundColor="Transparent" TextColor="#FF464859"
+                            FontSize="13" PlaceholderColor="#646b7a" x:Name="searchBar" Placeholder="Proveedor" 
+                           AbsoluteLayout.LayoutBounds="0,0,600,40" AbsoluteLayout.LayoutFlags="None" />
+                    <ListView x:Name="ProveedorListView" IsVisible="False"   
+                              CachingStrategy="RecycleElement" BackgroundColor="White" 
+                              ItemTapped="ListView_OnItemTapped" 
+                              AbsoluteLayout.LayoutBounds="5,30,600,160" AbsoluteLayout.LayoutFlags="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame>
+                                        <StackLayout BackgroundColor="White">
+                                            <Label Text="{Binding sNombreCompleto}" FontSize="13" TextColor="#FF464859"/>
+                                        </StackLayout>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </AbsoluteLayout>
+                <Button x:Name="btnConsulta" Text="Consultar" Clicked="btnConsultar" CornerRadius="20" />
+                <BoxView Color="Transparent" HeightRequest="600"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

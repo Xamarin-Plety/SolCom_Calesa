@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "dgSpecHash": "wkEUzDSsDXT145Z1XSlHvYzLZVaHgwqw+D1QX5ZIJi1C+YSnElpya5LFeuCWWX0D2dndLCyPTrDmOElF/OfMhw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\desarrollo3\\Documents\\GitHub\\SolComApp\\SolComNotificaciones\\SolCom\\SolCom.iOS\\SolCom.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\acr.userdialogs\\7.0.0\\acr.userdialogs.7.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\btprogresshud\\1.2.0.6\\btprogresshud.1.2.0.6.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\microsoft.appcenter\\2.0.0\\microsoft.appcenter.2.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\microsoft.appcenter.analytics\\2.0.0\\microsoft.appcenter.analytics.2.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\microsoft.appcenter.crashes\\2.0.0\\microsoft.appcenter.crashes.2.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\microsoft.appcenter.push\\2.0.0\\microsoft.appcenter.push.2.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\netstandard.library\\2.0.1\\netstandard.library.2.0.1.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\plugin.userdialogs\\1.0.0\\plugin.userdialogs.1.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\sqlite-net-pcl\\1.6.292\\sqlite-net-pcl.1.6.292.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.13\\sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\sqlitepclraw.provider.sqlite3.ios_unified\\1.1.13\\sqlitepclraw.provider.sqlite3.ios_unified.1.1.13.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.firebase.ios.cloudmessaging\\4.7.1\\xamarin.firebase.ios.cloudmessaging.4.7.1.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.firebase.ios.core\\6.10.4\\xamarin.firebase.ios.core.6.10.4.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.firebase.ios.installations\\1.7.0\\xamarin.firebase.ios.installations.1.7.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.firebase.ios.instanceid\\4.8.0\\xamarin.firebase.ios.instanceid.4.8.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Degradación del paquete detectada: sqlite-net-pcl de 1.7.335 a 1.6.292. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n SolCom.iOS -> SolCom -> sqlite-net-pcl (>= 1.7.335) \r\n SolCom.iOS -> sqlite-net-pcl (>= 1.6.292)",
+      "libraryId": "sqlite-net-pcl",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}

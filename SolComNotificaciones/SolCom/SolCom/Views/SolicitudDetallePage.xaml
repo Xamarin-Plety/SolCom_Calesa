@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.SolicitudDetallePage"
+             BackgroundColor="#d0e7f5"
+             Title="Solicitud de Compra">
+    <ContentPage.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="BorderRadius" Value="20" />
+            <Setter Property="HeightRequest" Value="32"/>
+            <Setter Property="BackgroundColor" Value="#81bee4"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems >
+        <ToolbarItem x:Name="btnAcepta" Text="Aceptar"
+                 Order="Secondary"
+                 Priority="0" />
+        <ToolbarItem x:Name="btnRechaza" Text="Rechazar"
+                 Order="Secondary"
+                 Priority="1" />
+        <ToolbarItem x:Name="btnCancela" Text="Cancelar"
+                 Order="Secondary"
+                 Priority="2" />
+    </ContentPage.ToolbarItems>
+    
+    <ScrollView>
+        <Grid x:Name="grdPrincipal" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="120" />
+                
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition  Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Solicitud:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="0" Grid.Column="1" Text="{Binding rSolicitud.iIdSolicitud}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Centro Alta:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="1" Grid.Column="1" Text="{Binding rSolicitud.sCentroAlta}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Centro Solicita:"  FontSize="12" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding rSolicitud.sCentroSolicita}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="3" Grid.Column="0" Text="Empresa:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="3" Grid.Column="1" Text="{Binding rSolicitud.sEmpresa}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+
+            <Label Grid.Row="4" Grid.Column="0" Text="ID Justificación:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="4" Grid.Column="1" Text="{Binding rSolicitud.sIdJustificacion}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+            
+            <Label Grid.Row="5" Grid.Column="0" Text="Proveedor Sugerido:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="5" Grid.Column="1" Text="{Binding rSolicitud.sPersonaProvSug}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="6" Grid.Column="0" Text="Explicación:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="6" Grid.Column="1" Text="{Binding rSolicitud.sJustificacion}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="7" Grid.Column="0" Text="Estatus:" FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="7" Grid.Column="1" Text="{Binding rSolicitud.sEstatus}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="8" Grid.Column="0" Text="Fecha Alta:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="8" Grid.Column="1" Text="{Binding rSolicitud.dtFechaAlta,StringFormat='{0:dd/MM/yy}'}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="9" Grid.Column="0" Text="Fecha Probable de Entrega:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="9" Grid.Column="1" Text="{Binding rSolicitud.dtFechaEntrega,StringFormat='{0:dd/MM/yy}'}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="10" Grid.Column="0" Text="Centro de Costos:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="10" Grid.Column="1" Text="{Binding rSolicitud.sCeCo}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="11" Grid.Column="0" Text="Cuenta Contable:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="11" Grid.Column="1" Text="{Binding rSolicitud.sCuentaContable}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="12" Grid.Column="0" Text="Total:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="12" Grid.Column="1" Text="{Binding rSolicitud.dTotal, StringFormat='{0:c}'}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="13" Grid.Column="0" Text="Moneda:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="13" Grid.Column="1" Text="{Binding rSolicitud.sTipoMoneda}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="14" Grid.Column="0" Text="Solicitante:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="14" Grid.Column="1" Text="{Binding rSolicitud.sSolicitante}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="15" Grid.Column="0" Text="Asignada:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="15" Grid.Column="1" Text="{Binding rSolicitud.Asignada}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="16" Grid.Column="0" Text="OC:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="16" Grid.Column="1" Text="{Binding rSolicitud.iIdOC}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="17" Grid.Column="0" Text="Entrada:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="17" Grid.Column="1" Text="{Binding rSolicitud.iIdEntrada}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="18" Grid.Column="0" Text="Factura:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="18" Grid.Column="1" Text="{Binding rSolicitud.iIdFactura}"  FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+            
+            <ListView Grid.Row="19" Grid.Column="0" Grid.ColumnSpan="2" x:Name="SolicitudListView"
+                ItemsSource="{Binding rSolicitud.lstDetalleSolicitud}"
+               Margin="0,0,0,0"  BackgroundColor="#d0e7f5" 
+                      ItemSelected="SolicitudListView_ItemSelected">
+                <ListView.Header >
+                    <Grid BackgroundColor="#d0e7f5" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20" />
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="4*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+                        </Grid.RowDefinitions>
+                        <BoxView Color="LightGray" Grid.ColumnSpan="5" HeightRequest="15" />
+                        <Label Text="#" Grid.Column="0" Grid.Row="0" FontSize="15" TextColor="Black" HorizontalOptions="Center" />
+                        <Label Text="Descripción" Grid.Column="1" Grid.Row="0" FontSize="15" TextColor="Black" />
+                        <Label Text="Cant." Grid.Column="2" Grid.Row="0" FontSize="15" TextColor="Black" HorizontalOptions="End"/>
+                        <Label Text="Precio" Grid.Column="3" Grid.Row="0" FontSize="15" TextColor="Black" HorizontalOptions="End"/>
+                        <Label Text="Total" Grid.Column="4" Grid.Row="0" FontSize="15" TextColor="Black" HorizontalOptions="End"/>
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid BackgroundColor="#d0e7f5" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20" />
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="20" />
+                                    <ColumnDefinition Width="5*" />
+                                    <ColumnDefinition Width="3*" />
+                                    <ColumnDefinition Width="4*" />
+                                    <ColumnDefinition Width="4*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Text="{Binding iPartida}"  FontSize="12" TextColor="Black" HorizontalOptions="Center"/>
+                                <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Text="{Binding sDescripcion}" FontSize="12" TextColor="Black"/>
+                                <Label Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Text="{Binding dCantidad, StringFormat='{0:n}'}"  FontSize="12" TextColor="Black" HorizontalOptions="EndAndExpand"/>
+                                <Label Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" Text="{Binding dPrecioUnitario, StringFormat='{0:c}'}" FontSize="12" TextColor="Black" HorizontalOptions="EndAndExpand"/>
+                                <Label Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Text="{Binding dTotal, StringFormat='{0:c}'}" FontSize="12" TextColor="Black" HorizontalOptions="EndAndExpand"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <ListView Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="2" x:Name="PDFListView"
+                ItemsSource="{Binding rSolicitud.lstDocumentosSolicitud}"
+                      VerticalOptions="FillAndExpand"
+                HasUnevenRows="true" BackgroundColor="#d0e7f5"  Margin="0,5,0,0" >
+                <ListView.Header >
+                    <Grid BackgroundColor="#d0e7f5" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="120"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+                        </Grid.RowDefinitions>
+                        <BoxView Color="LightGray" Grid.ColumnSpan="5" HeightRequest="15" />
+                        <Label Text="Archivo" Grid.Column="0" Grid.Row="0" FontSize="15" TextColor="Black" HorizontalOptions="Center" />
+                        <Label Text=" " Grid.Column="1" Grid.Row="0" FontSize="15" TextColor="Black" />
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ScrollView VerticalOptions="FillAndExpand">
+                                <StackLayout >
+                                    <Grid BackgroundColor="#d0e7f5">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="120" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Grid.Row="0" Text="{Binding sNombreArchivo}"  />
+                                        <Button Grid.Column="1" Grid.Row="0" Text="Descargar" FontSize="11" 
+                                                Style="{StaticResource ButtonStyle}"
+                                                Clicked="btnConsultar" BindingContext="{Binding sNombreArchivo}" />
+                                    </Grid>
+                                </StackLayout>
+                            </ScrollView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+            <ListView Grid.Row="21" Grid.Column="0" Grid.ColumnSpan="2" x:Name="ComentariosListView"
+                ItemsSource="{Binding rSolicitud.lstComenatriosSolicitud}"
+                      VerticalOptions="FillAndExpand"
+                HasUnevenRows="true" BackgroundColor="#d0e7f5"  Margin="0,0,0,0" >
+                <ListView.Header >
+                    <Grid BackgroundColor="#d0e7f5" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Color="LightGray" Grid.ColumnSpan="5" HeightRequest="15" />
+                        <Label Text="#" Grid.Column="0" Grid.Row="0" FontSize="13" TextColor="Black" HorizontalOptions="Center" />
+                        <Label Text="Fecha" Grid.Column="1" Grid.Row="0" FontSize="13" TextColor="Black" HorizontalOptions="Center" />
+                        <Label Text="Comentario" Grid.Column="2" Grid.Row="0" FontSize="13" TextColor="Black" />
+                        <Label Text="Usuario" Grid.Column="3" Grid.Row="0" FontSize="13" TextColor="Black" />
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ScrollView VerticalOptions="FillAndExpand">
+                                <StackLayout>
+                                    <Grid BackgroundColor="#d0e7f5">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="100" />
+                                            <ColumnDefinition Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Grid.Row="0" Text="{Binding iPosicion}" FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" />
+                                        <Label Grid.Column="1" Grid.Row="0" Text="{Binding dtFecha,StringFormat='{0:dd/MM/yy}'}" FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" />
+                                        <Label Grid.Column="2" Grid.Row="0" Text="{Binding sComentario}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+                                        <Label Grid.Column="3" Grid.Row="0" Text="{Binding sUsuario}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+                                    </Grid>
+                                </StackLayout>
+                            </ScrollView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

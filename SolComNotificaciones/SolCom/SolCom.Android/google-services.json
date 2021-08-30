@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "145623243994",
+    "firebase_url": "https://solcomnotification.firebaseio.com",
+    "project_id": "solcomnotification",
+    "storage_bucket": "solcomnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145623243994:android:b1f2127c865d96473d59e3",
+        "android_client_info": {
+          "package_name": "com.pasteleriaLety.App1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145623243994-4tv2uj0cml6lcjqqnv7vc2mmir9i40vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9LYafJETX_v0Qkpn2iVclIFX-duU5ijQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145623243994-4tv2uj0cml6lcjqqnv7vc2mmir9i40vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145623243994:android:82029f4fa4e3800e3d59e3",
+        "android_client_info": {
+          "package_name": "com.pasteleriaLety.SolCom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145623243994-4tv2uj0cml6lcjqqnv7vc2mmir9i40vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9LYafJETX_v0Qkpn2iVclIFX-duU5ijQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145623243994-4tv2uj0cml6lcjqqnv7vc2mmir9i40vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

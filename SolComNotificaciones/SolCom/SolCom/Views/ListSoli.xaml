@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ListSoli"
+             x:Name="ListadoSolicitudes"
+             BackgroundColor="#d0e7f5" 
+             Title="Solicitudes por Autorizar">
+
+        <StackLayout BackgroundColor="#d0e7f5">
+            <ListView x:Name="SolicitudListView"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                Refreshing="SolicitudListView_Refreshing"
+                CachingStrategy="RecycleElement"
+                ItemSelected="OnListViewItemSelected" 
+                  BackgroundColor="#d0e7f5">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                        <Grid BackgroundColor="#d0e7f5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <BoxView Color="{Binding bgColor}" Grid.ColumnSpan="3" Grid.RowSpan="5"/>
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding sCentroSolicita}"  FontSize="15" TextColor="{Binding fntColor}" HorizontalOptions="StartAndExpand" Margin="10,0,0,0" />
+                            <Label Grid.Row="0" Grid.Column="2" Text="{Binding iIdSolicitud, StringFormat='Solicitud:{0}'}" FontSize="15" FontAttributes="Bold" TextColor="{Binding fntColor}" HorizontalOptions="Start" Margin="0,0,10,0"  />
+
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding sEmpresa}" TextColor="{Binding fntColor}" FontSize="12" HorizontalOptions="Start" Margin="10,0,10,0"  />
+                            <Label Grid.Row="1" Grid.Column="2" Text="{Binding dtFechaAlta,StringFormat='Fec. Alta:{0:dd/MM/yy}'}" TextColor="{Binding fntColor}" FontSize="11" HorizontalOptions="Start" Margin="0,0,10,0"  />
+
+                            <Label Grid.Row="2" Grid.Column="0" Text="{Binding sSolicitante}"  FontSize="11" TextColor="{Binding fntColor}" HorizontalOptions="StartAndExpand" Margin="10,0,0,0" />
+                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding dtFechaEntrega,StringFormat='Fec. Entrega:{0:dd/MM/yy}'}" TextColor="{Binding fntColor}" FontSize="11" HorizontalOptions="Start" Margin="0,0,10,0"  />
+                            <Label Grid.Row="2" Grid.Column="2" Text="{Binding dTotal,StringFormat='Total:{0:c}'}" TextColor="{Binding fntColor}" FontSize="11" HorizontalOptions="Start" Margin="0,0,10,0"  />
+
+                            <Label Grid.Row="3" Grid.Column="0" Text="{Binding sEstatus}"  FontSize="11" TextColor="{Binding fntColor}" HorizontalOptions="StartAndExpand" Margin="10,0,0,0" />
+                            <Label Grid.Row="3" Grid.Column="2" Text="{Binding Asignada}" FontSize="11" TextColor="{Binding fntColor}" HorizontalOptions="Start" Margin="0,0,10,0"  />
+
+                            <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Text="{Binding sJustificacion,StringFormat='Explicación:{0}'}" TextColor="{Binding fntColor}" FontSize="12" HorizontalOptions="StartAndExpand" Margin="10,0,10,0"  />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+
+</ContentPage>

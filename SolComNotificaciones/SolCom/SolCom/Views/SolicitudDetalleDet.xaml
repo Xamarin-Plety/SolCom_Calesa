@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolCom.Views.SolicitudDetalleDet"
+             Title="Detalle Solicitud de Compra">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#d0e7f5" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Partida:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="0" Grid.Column="1" Text="{Binding iPartida}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Descripción:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="1" Grid.Column="1" Text="{Binding sDescripcion}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Descripción Corta:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding sDescCorta}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="3" Grid.Column="0" Text="Unidad de Medida:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="3" Grid.Column="1" Text="{Binding sUnidadMedida}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="4" Grid.Column="0" Text="Cantidad:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="4" Grid.Column="1" Text="{Binding dCantidad, StringFormat='{0:n}'}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="5" Grid.Column="0" Text="Precio Unitario:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="5" Grid.Column="1" Text="{Binding dPrecioUnitario, StringFormat='{0:c}'}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="6" Grid.Column="0" Text="Total:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="6" Grid.Column="1" Text="{Binding dTotal, StringFormat='{0:c}'}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="7" Grid.Column="0" Text="Moneda:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="7" Grid.Column="1" Text="{Binding sTipoMoneda}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="8" Grid.Column="0" Text="CeCo:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="8" Grid.Column="1" Text="{Binding sCeCo}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="9" Grid.Column="0" Text="Cuenta Contable:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="9" Grid.Column="1" Text="{Binding sCuentaContable}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="10" Grid.Column="0" Text="Activo Fijo:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="10" Grid.Column="1" Text="{Binding sActivoFijo}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+            <Label Grid.Row="11" Grid.Column="0" Text="Retención:"  FontSize="13" HorizontalOptions="Start" Margin="10,0,0,0" TextColor="Black" FontAttributes="Bold"  />
+            <Label Grid.Row="11" Grid.Column="1" Text="{Binding sRetencion}" FontSize="13" HorizontalOptions="Start" Margin="0,0,10,0" TextColor="Black" />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

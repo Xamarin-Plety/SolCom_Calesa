@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "nnsxanldOUo6+Mm7ZFJ12DKUAOq5FEHnzO+ON1MK7evRPhyyaWzeK+y1hSo/BhA55fWbD7IOrUtC+hmA1eWccw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\desarrollo3\\Documents\\GitHub\\SolComApp\\SolComNotificaciones\\SolCom\\SolCom\\SolCom.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\acr.userdialogs\\7.0.0\\acr.userdialogs.7.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\microsoft.appcenter\\2.0.0\\microsoft.appcenter.2.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\microsoft.appcenter.analytics\\2.0.0\\microsoft.appcenter.analytics.2.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\microsoft.appcenter.crashes\\2.0.0\\microsoft.appcenter.crashes.2.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\microsoft.appcenter.push\\2.0.0\\microsoft.appcenter.push.2.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\plugin.userdialogs\\1.0.0\\plugin.userdialogs.1.0.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.3\\sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
+    "C:\\Users\\desarrollo3\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
